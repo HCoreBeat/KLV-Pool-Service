@@ -3,340 +3,292 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>KLV Pool Service · Piscinas en Collado Villalba</title>
-<meta name="description" content="Mantenimiento, rehabilitación, depuración y construcción de piscinas en Collado Villalba y la Sierra de Madrid. Presupuesto sin compromiso.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<title>KLV Pool Service · Piscinas en la Sierra de Madrid</title>
+<meta name="description" content="Mantenimiento, rehabilitación, depuración, cubiertas y construcción de piscinas en Collado Villalba. Presupuesto sin compromiso.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#06283d;--deep:#0a4560;--aqua:#19b5c8;--sun:#ffc857;
-  --bg:#f3fafb;--card:#fff;--text:#0b2f43;--mute:#4d6b7a;--line:#d5e7ec;
-  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
-  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
-  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#072233;--card:#0b3147;--text:#e6f4f7;--mute:#9bb8c4;--line:#164a63}}
-:root[data-theme="dark"]{--bg:#072233;--card:#0b3147;--text:#e6f4f7;--mute:#9bb8c4;--line:#164a63}
-html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);height:auto}
+:root{--ink:#031a28;--aqua:#19b5c8;--ice:#7fe3ee;--sun:#ffc857;--l:#f5f9fa;--t:#0b2330;--m:#5b7380;--card:#fff;--line:#d6e5ea;--ac:#0a8da0;
+--f:"Inter",-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--l:#071f2e;--t:#e8f4f7;--m:#93b0bc;--card:#0c3047;--line:#17465f;--ac:#7fe3ee}}
+:root[data-theme="dark"]{--l:#071f2e;--t:#e8f4f7;--m:#93b0bc;--card:#0c3047;--line:#17465f;--ac:#7fe3ee}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px)}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ink);z-index:60}
-h1,h2,h3{font-family:var(--display);line-height:1.04;margin:0;letter-spacing:-.025em}
-a{color:inherit}
-img,svg{max-width:100%}
-:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
-.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+body{margin:0;background:var(--l);color:var(--t);font:400 1.0625rem/1.5 var(--f);letter-spacing:-.011em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ink);z-index:80}
+h1,h2,h3{margin:0;font-weight:700}
+a{color:inherit}:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:8px}
+.w1{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(5rem,12vw,9rem) 0}
+.dk{background:var(--ink);color:#fff}
+h2{font-size:clamp(2.2rem,6vw,4.4rem);letter-spacing:-.04em;line-height:1.04}
+.sub{font-size:clamp(1.1rem,2vw,1.35rem);color:var(--m);max-width:32em;margin:1rem 0 0}.dk .sub{color:#9cc3cf}
+.eb{font-weight:600;color:var(--ac);margin-bottom:.8rem;font-size:1.05rem}.dk .eb{color:var(--ice)}
+.g{background:linear-gradient(100deg,#13b5c9 5%,#2a7de1 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.dk .g{background-image:linear-gradient(100deg,#7fe3ee,#19b5c8 50%,#4aa3ff)}
+.lnk{color:var(--ac);text-decoration:none;font-weight:500}.lnk::after{content:" ›";transition:margin .25s}.lnk:hover::after{margin-left:.3rem}
+.btn{display:inline-flex;align-items:center;font:600 1.02rem var(--f);padding:.95rem 1.7rem;border-radius:999px;background:var(--aqua);color:var(--ink);border:0;text-decoration:none;cursor:pointer;transition:transform .3s cubic-bezier(.3,1.5,.5,1),box-shadow .3s}
+.btn:hover{transform:scale(1.05);box-shadow:0 12px 34px -10px rgba(25,181,200,.8)}
+.rv{opacity:0;transform:translateY(46px) scale(.98);filter:blur(8px);transition:opacity 1s,transform 1s cubic-bezier(.2,.8,.2,1),filter 1s;transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none;filter:none}
+.art{position:absolute;inset:0}.art svg{width:100%;height:100%;display:block}
 
-/* Cabecera */
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);border-bottom:1px solid rgba(10,69,96,.1);box-shadow:0 6px 24px rgba(6,40,61,.08)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{display:flex;align-items:center;text-decoration:none}
-.logo img{display:block;width:64px;height:64px;object-fit:contain;border-radius:8px}
-header nav{display:flex;align-items:center;gap:clamp(.8rem,1.8vw,1.35rem)}
-header nav a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.94rem;white-space:nowrap;transition:color .2s,background .2s,transform .25s,box-shadow .25s}
-header nav a:hover{color:#087b9b}
-header nav a.btn.sun{color:#fff;background:linear-gradient(135deg,#087fa3,#07547d);box-shadow:0 7px 18px rgba(7,84,125,.2)}
-header nav a.btn.sun:hover{color:#fff;background:linear-gradient(135deg,#096b8b,#063e62);box-shadow:0 10px 24px rgba(7,84,125,.28)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font:600 1rem var(--body);padding:.9rem 1.5rem;border-radius:999px;border:0;cursor:pointer;text-decoration:none;transition:transform .25s cubic-bezier(.3,1.5,.5,1),box-shadow .25s,background .2s}
-.btn:hover{transform:translateY(-3px)}
-.btn.sun{background:var(--sun);color:var(--ink);box-shadow:0 8px 24px -8px rgba(255,200,87,.7)}
-.btn.sun:hover{box-shadow:0 14px 30px -8px rgba(255,200,87,.8)}
-.btn.ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.3)}
-.btn.ghost:hover{background:rgba(255,255,255,.2)}
-.btn.small{padding:.6rem 1.15rem;font-size:.93rem}
-.burger{display:none;background:transparent;border:0;border-radius:12px;color:var(--ink);width:44px;height:44px;cursor:pointer;transition:background .2s}
-.burger:hover{background:rgba(25,181,200,.12)}
-.burger span{display:block;width:24px;height:2px;background:var(--deep);margin:6px auto;transition:transform .3s,opacity .3s}
-.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
-.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
-.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+/* Nav */
+.nv{position:sticky;top:env(safe-area-inset-top,0px);z-index:70;height:52px;background:rgba(3,26,40,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);color:#fff;font-size:.82rem}
+.nv .w1{display:flex;align-items:center;justify-content:space-between;height:100%}
+.nv a{text-decoration:none;opacity:.85;transition:opacity .2s}.nv a:hover{opacity:1}
+.nv .lg{font-weight:700;font-size:1rem;opacity:1;letter-spacing:-.02em}
+.nv .ls{display:flex;gap:2rem}
+.nv .pl{background:var(--aqua);color:var(--ink);padding:.4rem .95rem;border-radius:999px;font-weight:600;opacity:1}
+#pg{position:absolute;left:0;bottom:0;height:2px;width:0;background:linear-gradient(90deg,var(--aqua),var(--sun))}
+@media (max-width:760px){.nv .ls{display:none}}
 
 /* Hero */
-.hero{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 20% 0%,var(--deep),var(--ink) 65%);color:#fff;padding:clamp(4rem,11vh,7.5rem) 0 clamp(11rem,22vh,15rem);min-height:min(92vh,860px);isolation:isolate}
-.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;z-index:-1;animation:drift 16s ease-in-out infinite alternate}
-.blob.a{width:480px;height:480px;background:var(--aqua);top:-120px;right:-80px}
-.blob.b{width:360px;height:360px;background:#1b7fa8;bottom:20%;left:-100px;animation-delay:-6s}
-@keyframes drift{to{transform:translate(-60px,50px) scale(1.18)}}
-.hero h1{font-size:clamp(2.7rem,8vw,6rem);font-weight:800;max-width:13ch}
-.hero p.lead{font-size:clamp(1.1rem,2.2vw,1.35rem);max-width:46ch;margin:1.5rem 0 2.2rem;color:#cfeaf0}
-.cta{display:flex;flex-wrap:wrap;gap:.9rem}
-.proof{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.4rem;font-size:.95rem;color:#a9d3de}
-.proof b{color:#fff;font-weight:600}
-.in{opacity:0;transform:translateY(26px);animation:in .9s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*.13s + .15s)}
-@keyframes in{to{opacity:1;transform:none}}
-.ripple{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;border:2px solid rgba(127,227,238,.7);border-radius:50%;pointer-events:none;animation:rip 1.4s ease-out forwards}
-@keyframes rip{to{transform:scale(14);opacity:0}}
+.hero{text-align:center;padding:clamp(3.5rem,9vh,6.5rem) 0 0;overflow:hidden}
+.hero h1{font-size:clamp(3rem,10.5vw,7.6rem);letter-spacing:-.055em;line-height:.98}
+.hero .sub{margin:1.4rem auto 0;text-align:center}
+.cta{display:flex;justify-content:center;align-items:center;gap:1.6rem;flex-wrap:wrap;margin-top:2rem}
+.sw{margin:clamp(2.5rem,6vw,4.5rem) auto 0;width:min(1180px,100% - 2rem);perspective:1400px}
+.stage{position:relative;aspect-ratio:16/9;border-radius:clamp(22px,4vw,42px);overflow:hidden;transform:scale(var(--s,.9)) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .25s ease-out;box-shadow:0 60px 120px -40px rgba(3,26,40,.55);will-change:transform}
+.chp{position:absolute;padding:.65rem 1.1rem;border-radius:999px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#fff;font-weight:600;font-size:clamp(.72rem,1.6vw,.95rem);animation:fl 6s ease-in-out infinite alternate;text-shadow:0 1px 8px rgba(0,0,0,.25)}
+@keyframes fl{to{transform:translateY(-12px)}}
+@media (max-width:640px){.stage{aspect-ratio:4/5}}
 
-/* Secciones */
-section{padding:clamp(4rem,9vw,7rem) 0}
-.kicker{color:var(--aqua);font-weight:600;margin-bottom:.8rem}
-h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;max-width:18ch}
-.sub{color:var(--mute);max-width:52ch;margin:1rem 0 0}
+/* Texto que se enciende */
+.bw{font-size:clamp(1.9rem,5vw,3.9rem);letter-spacing:-.04em;line-height:1.1;font-weight:700;max-width:19em}
+.w{opacity:.16;transition:opacity .4s}.w.on{opacity:1}
 
-/* Servicios */
-.svc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(1.5rem,4vw,4rem);margin-top:3rem;align-items:start}
-.tabs{display:flex;flex-direction:column;border-top:1px solid var(--line)}
-.tab{all:unset;box-sizing:border-box;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem .25rem;border-bottom:1px solid var(--line);font:700 clamp(1.1rem,2vw,1.4rem) var(--display);letter-spacing:-.015em;color:var(--mute);transition:color .25s,padding .3s}
-.tab::after{content:"";width:10px;height:10px;border-right:2.5px solid currentColor;border-top:2.5px solid currentColor;transform:rotate(45deg);opacity:0;transition:opacity .25s,transform .3s}
-.tab:hover{color:var(--text)}
-.tab[aria-selected="true"]{color:var(--text);padding-left:1rem;box-shadow:inset 4px 0 0 var(--aqua)}
-.tab[aria-selected="true"]::after{opacity:1;transform:translateX(4px) rotate(45deg)}
-.panel{position:sticky;top:100px;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(1.6rem,3.5vw,2.8rem);overflow:hidden;min-height:340px}
-.panel::before{content:"";position:absolute;inset:auto -20% -60% -20%;height:70%;background:radial-gradient(closest-side,rgba(25,181,200,.22),transparent);pointer-events:none}
-.panel .swap{animation:swap .5s cubic-bezier(.2,.8,.2,1)}
-@keyframes swap{from{opacity:0;transform:translateY(14px)}}
-.panel h3{font-size:clamp(1.6rem,3vw,2.3rem);margin-bottom:1rem}
-.panel p{color:var(--mute);margin:0 0 1.4rem;max-width:56ch}
-.panel ul{list-style:none;margin:0 0 1.8rem;padding:0;display:grid;gap:.7rem}
-.panel li{display:flex;gap:.75rem;align-items:flex-start}
-.panel li::before{content:"";flex:none;width:20px;height:20px;margin-top:.2rem;border-radius:50%;background:var(--aqua) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-6.5' fill='none' stroke='%2306283d' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100%}
-.panel .btn{background:var(--ink);color:#fff}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .panel .btn{background:var(--aqua);color:var(--ink)}}
+/* Cubiertas (fijo + scroll) */
+.pin{height:300vh;padding:0;position:relative}
+.st{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:clamp(1rem,3vh,2.4rem);text-align:center;padding:60px 1rem 1rem;overflow:hidden}
+.phs{position:relative;height:clamp(9rem,26vh,13rem);width:min(900px,100%)}
+.ph{position:absolute;inset:0;opacity:0;transform:translateY(30px);transition:opacity .6s,transform .6s cubic-bezier(.2,.8,.2,1)}.ph.on{opacity:1;transform:none}
+.ph h2{font-size:clamp(2.6rem,8vw,6rem)}.ph p{color:#9cc3cf;font-size:clamp(1rem,2vw,1.3rem);margin:.6rem auto 0;max-width:30em}
+#cov{width:min(900px,94vw);filter:drop-shadow(0 30px 70px rgba(25,181,200,.35))}#cov svg{display:block;width:100%}
 
-/* Proceso */
-.proc{background:var(--ink);color:#fff;position:relative;overflow:hidden}
-.proc h2{color:#fff}.proc .sub{color:#a9d3de}
-.steps{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3.5rem;counter-reset:s}
-.line{position:absolute;top:22px;left:22px;right:22px;height:3px;background:rgba(255,255,255,.14);border-radius:3px}
-.line i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--aqua),var(--sun));border-radius:3px;transition:width 1.8s cubic-bezier(.3,.7,.2,1)}
-.steps.go .line i{width:100%}
-.step{position:relative;padding-top:4rem}
-.step::before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:46px;height:46px;border-radius:50%;background:var(--ink);border:3px solid var(--aqua);display:grid;place-items:center;font:800 1.1rem var(--display)}
-.step h3{font-size:1.5rem;margin-bottom:.6rem}.step p{margin:0;color:#b9dbe4;max-width:34ch}
+/* Bento */
+.bt{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem;margin-top:3rem}
+.cd{position:relative;grid-column:span var(--sp);min-height:clamp(400px,44vw,540px);border-radius:32px;overflow:hidden;color:#fff;background:var(--ink);isolation:isolate;display:flex;align-items:flex-end;transition:transform .6s cubic-bezier(.2,.8,.2,1),box-shadow .6s}
+.cd:hover{transform:translateY(-6px);box-shadow:0 40px 80px -30px rgba(3,26,40,.6)}
+.cd .art{transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}.cd:hover .art{transform:scale(1.07)}
+.cd .tx{position:relative;z-index:1;margin:.9rem;width:calc(100% - 1.8rem);padding:1.3rem 1.5rem 1.4rem;border-radius:24px;background:rgba(3,26,40,.55);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border:1px solid rgba(255,255,255,.15)}
+.cd h3{font-size:clamp(1.5rem,2.6vw,2.1rem);letter-spacing:-.035em;line-height:1.08}
+.cd p{margin:.45rem 0 .9rem;color:#cfe6ec}
+.cd ul{list-style:none;margin:0 0 1.1rem;padding:0;display:grid;gap:.45rem;font-size:.95rem;color:#e3f2f6}
+.cd li{display:flex;gap:.65rem}.cd li::before{content:"";flex:none;width:6px;height:6px;margin-top:.55rem;border-radius:50%;background:var(--ice)}
+.cd .lnk{color:var(--ice)}
+.nb{position:absolute;top:1.1rem;left:1.1rem;z-index:1;font-weight:700;font-size:.85rem;padding:.4rem .8rem;border-radius:999px;background:rgba(255,255,255,.2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.35)}
+.rp{position:absolute;top:1.1rem;right:1.1rem;z-index:1;display:grid;gap:.5rem;padding:1rem 1.1rem;border-radius:20px;background:rgba(255,255,255,.18);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.35);font-size:.88rem;font-weight:600}
+.rp b{font-size:.72rem;opacity:.85;text-transform:uppercase;letter-spacing:.07em}
+.rp span::before{content:"✓";display:inline-grid;place-items:center;width:19px;height:19px;margin-right:.55rem;border-radius:50%;background:#34d399;color:var(--ink);font-size:.72rem}
+@media (max-width:1000px){.bt{grid-template-columns:repeat(2,1fr)}.cd{grid-column:auto}.cd:first-child{grid-column:span 2}}
+@media (max-width:620px){.bt{grid-template-columns:1fr}.cd:first-child{grid-column:auto}}
 
-/* Galería */
-.chips{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;margin:2rem -1.25rem 1.5rem;padding:.2rem 1.25rem}
-.chips::-webkit-scrollbar{display:none}
-.chip{flex:none;font:600 .95rem var(--body);padding:.65rem 1.15rem;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--text);cursor:pointer;transition:background .25s,color .25s,transform .25s}
-.chip:hover{transform:translateY(-2px)}
-.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip[aria-pressed="true"]{background:var(--aqua);border-color:var(--aqua);color:var(--ink)}}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.65rem}
-.shot{position:relative;aspect-ratio:1;border:0;padding:0;border-radius:18px;overflow:hidden;cursor:zoom-in;display:block;background:linear-gradient(135deg,var(--deep),var(--aqua));animation:pop .55s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--k)*45ms)}
-@keyframes pop{from{opacity:0;transform:scale(.93)}}
-.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
-.shot:hover img{transform:scale(1.07)}
-.shot span{position:absolute;inset:auto 0 0;padding:2.2rem .9rem .8rem;background:linear-gradient(transparent,rgba(6,40,61,.88));color:#fff;font-weight:600;font-size:.88rem;text-align:left;transition:opacity .3s,transform .3s}
-@media (hover:hover){.shot span{opacity:0;transform:translateY(40%)}.shot:hover span,.shot:focus-visible span{opacity:1;transform:none}}
-.shot.ph img{display:none}
-.shot.ph::before{content:"💧";position:absolute;inset:0;display:grid;place-items:center;font-size:2.4rem;opacity:.85}
-@media (min-width:700px){.grid{grid-template-columns:repeat(3,1fr);gap:1rem}.shot.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}.chips{margin-inline:0;padding-inline:0}}
-@media (min-width:1000px){.grid{grid-template-columns:repeat(4,1fr)}}
-.lb{position:fixed;inset:0;z-index:70;background:rgba(3,20,31,.95);display:grid;grid-template-rows:1fr auto;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;padding:calc(env(safe-area-inset-top,0px) + 60px) 1rem calc(env(safe-area-inset-bottom,0px) + 1rem)}
-.lb.open{opacity:1;visibility:visible}
-.lb figure{margin:0;min-height:0;display:grid;place-items:center}
-.lb img{max-width:100%;max-height:100%;border-radius:14px;object-fit:contain;animation:swap .4s cubic-bezier(.2,.8,.2,1)}
-.lb figure.ph img{display:none}
-.lb figure.ph::before{content:"Foto disponible al publicar en tu dominio";color:#a9d3de;text-align:center}
-.lb .cap{color:#fff;text-align:center;padding:.9rem 0 .2rem;font-weight:600}
-.lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff;font-size:1.4rem;cursor:pointer;transition:background .2s}
-.lb button:hover{background:rgba(255,255,255,.25)}
-.lb .x{top:calc(env(safe-area-inset-top,0px) + 10px);right:1rem}
-.lb .p,.lb .n{top:50%;margin-top:-24px}.lb .p{left:.6rem}.lb .n{right:.6rem}
-@media (max-width:700px){.lb .p,.lb .n{top:auto;bottom:calc(env(safe-area-inset-bottom,0px) + .5rem);margin:0}}
-.waves{position:absolute;left:0;right:0;bottom:-1px;height:clamp(120px,19vw,220px);pointer-events:none}
-.waves canvas{width:100%;height:100%;display:block}
-.hv{display:none}
-@media (min-width:900px){.hg{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:3rem;align-items:center}.hv{display:block}}
-.hv .card{aspect-ratio:1;border-radius:36px;overflow:hidden;transform:rotate(3deg);border:6px solid rgba(255,255,255,.14);box-shadow:0 40px 80px -24px rgba(0,0,0,.65);animation:bob 7s ease-in-out infinite alternate}
-@keyframes bob{to{transform:rotate(1deg) translateY(-14px)}}
-.art{position:absolute;inset:0;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
-.art svg{width:100%;height:100%;display:block}
-.shot img{position:absolute;inset:0}
-.shot:hover .art{transform:scale(1.07)}
-.lb .art{position:relative;inset:auto;width:min(100%,68vh);aspect-ratio:1;border-radius:16px;overflow:hidden;animation:swap .4s cubic-bezier(.2,.8,.2,1)}
-/* FAQ */
-.faqw{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(2rem,5vw,5rem);align-items:start}
-.faqw aside{position:sticky;top:100px}
-.faqw .btn{background:var(--ink);color:#fff;margin-top:1.6rem}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .faqw .btn{background:var(--aqua);color:var(--ink)}}
-.faq{border-top:1px solid var(--line)}
-.q{border-bottom:1px solid var(--line)}
-.q button{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.3rem .2rem;font:700 clamp(1.05rem,2.2vw,1.28rem)/1.25 var(--display);letter-spacing:-.01em}
-.q button:focus-visible{outline:3px solid var(--sun);outline-offset:2px;border-radius:6px}
-.q button::after{content:"+";flex:none;font:400 1.9rem/1 var(--body);color:var(--aqua);transition:transform .4s cubic-bezier(.3,1.4,.5,1)}
-.q.open button::after{transform:rotate(135deg)}
-.q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.8,.2,1)}
-.q.open .a{grid-template-rows:1fr}
-.q .a div{overflow:hidden}
-.q .a p{margin:0;padding:0 .2rem 1.4rem;color:var(--mute);max-width:62ch}
-@media (max-width:860px){.faqw{grid-template-columns:1fr}.faqw aside{position:static}}
+/* Cifras */
+.sts{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;text-align:center}
+.nm{font-size:clamp(4.5rem,13vw,9rem);font-weight:700;letter-spacing:-.06em;line-height:1;background:linear-gradient(180deg,#fff 20%,var(--aqua));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sts p{margin:.6rem 0 0;color:#9cc3cf;font-size:1.1rem}
+@media (max-width:760px){.sts{grid-template-columns:1fr;gap:3rem}}
+
+/* Pasos apilados */
+.sc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px + var(--i)*20px);min-height:clamp(300px,58vh,480px);border-radius:34px;padding:clamp(1.8rem,5vw,3.5rem);margin-bottom:1.6rem;color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 -20px 50px -20px rgba(0,0,0,.35);background:linear-gradient(135deg,var(--c1),var(--c2))}
+.sc b{font-size:clamp(5rem,16vw,11rem);line-height:.8;font-weight:700;letter-spacing:-.07em;opacity:.28}
+.sc h3{font-size:clamp(1.8rem,4.4vw,3.2rem);letter-spacing:-.04em;line-height:1.05}.sc p{margin:.7rem 0 0;max-width:30em;font-size:1.15rem;opacity:.88}
+
+/* Carrusel */
+.rh{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem}
+.ar{display:flex;gap:.6rem}.ar button{width:46px;height:46px;border-radius:50%;border:0;background:var(--card);color:var(--t);font-size:1.4rem;cursor:pointer;border:1px solid var(--line);transition:transform .25s}.ar button:hover{transform:scale(1.1)}
+.rail{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:2.5rem;padding:.5rem max(1.25rem,calc((100vw - 1180px)/2)) 1rem;scroll-padding-inline:max(1.25rem,calc((100vw - 1180px)/2));scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.it{flex:none;position:relative;margin:0;width:min(80vw,430px);aspect-ratio:4/5;border-radius:30px;overflow:hidden;scroll-snap-align:start;background:var(--ink)}
+.it img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.it figcaption{position:absolute;inset:auto 0 0;padding:3rem 1.4rem 1.3rem;background:linear-gradient(transparent,rgba(3,26,40,.85));color:#fff;font-weight:600;font-size:1.15rem;letter-spacing:-.02em}
+.it small{display:block;color:var(--ice);font-weight:600;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:.2rem}
+
 /* Zona */
-.zone{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2.2rem}
-.zone span{padding:.55rem 1.1rem;border:1px solid var(--line);border-radius:999px;background:var(--card);font-weight:500;transition:transform .25s,border-color .25s,background .25s}
-.zone span:hover{transform:translateY(-3px);border-color:var(--aqua)}
-.zone span.main{background:var(--aqua);border-color:var(--aqua);color:var(--ink);font-weight:600}
+.mq{overflow:hidden;margin-top:2.5rem;-webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mq div{display:flex;gap:.8rem;width:max-content;margin-bottom:.8rem;animation:mq 45s linear infinite}.mq div:nth-child(2){animation-direction:reverse;animation-duration:55s}
+.mq span{padding:.9rem 1.6rem;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);color:#e8f4f7;font-weight:600;font-size:1.1rem;white-space:nowrap;backdrop-filter:blur(8px);transition:background .3s,color .3s}.mq span:hover{background:rgba(255,255,255,.16)}.mq span.hl{background:linear-gradient(100deg,#7fe3ee,#19b5c8);border-color:transparent;color:var(--ink)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* FAQ */
+.fq{max-width:860px;margin:2.5rem auto 0;border-top:1px solid var(--line)}
+.q{border-bottom:1px solid var(--line)}
+.q button{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.5rem .2rem;font:600 clamp(1.1rem,2.3vw,1.4rem)/1.25 var(--f);letter-spacing:-.025em}
+.q button:focus-visible{outline:3px solid var(--sun);border-radius:8px}
+.q button::after{content:"+";flex:none;font:300 2.2rem/1 var(--f);color:var(--ac);transition:transform .4s cubic-bezier(.3,1.4,.5,1)}
+.q.open button::after{transform:rotate(135deg)}
+.q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.2,.8,.2,1)}.q.open .a{grid-template-rows:1fr}
+.q .a div{overflow:hidden}.q .a p{margin:0;padding:0 .2rem 1.6rem;color:var(--m);max-width:60ch;font-size:1.1rem}
 
 /* Contacto */
-.contact{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(2rem,5vw,5rem);align-items:start}
-.direct{display:grid;gap:.9rem;margin-top:2rem}
-.direct a{display:flex;align-items:center;gap:.9rem;text-decoration:none;font-weight:600;font-size:1.15rem}
-.direct a span{width:46px;height:46px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;transition:background .25s,transform .3s}
-.direct a:hover span{background:var(--aqua);transform:scale(1.08)}
-form{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(1.4rem,3vw,2.4rem);display:grid;gap:1.1rem}
-label{display:grid;gap:.4rem;font-weight:600;font-size:.95rem}
-input,select,textarea{font:inherit;color:inherit;background:var(--bg);border:1.5px solid var(--line);border-radius:14px;padding:.85rem 1rem;width:100%;transition:border-color .2s,box-shadow .2s}
-input:focus,select:focus,textarea:focus{outline:0;border-color:var(--aqua);box-shadow:0 0 0 4px rgba(25,181,200,.2)}
-textarea{min-height:110px;resize:vertical}
-form .btn{background:var(--ink);color:#fff;justify-self:start}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) form .btn{background:var(--aqua);color:var(--ink)}}
-.note{font-size:.88rem;color:var(--mute);margin:0}
-footer{background:var(--ink);color:#a9d3de;padding:2.2rem 0;font-size:.93rem}
-footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between}
-footer a{text-decoration:none;margin-right:1.2rem}footer a:hover{color:#fff}
-.fab{position:fixed;right:max(1.1rem,env(safe-area-inset-right,0px));bottom:calc(1.1rem + env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 26px -6px rgba(0,0,0,.45);transition:transform .3s cubic-bezier(.3,1.5,.5,1)}
+.ct{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(2rem,6vw,6rem);align-items:center}
+.dr{display:grid;gap:.5rem;margin-top:2rem;font-size:1.3rem}
+form{display:grid;gap:1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:30px;padding:clamp(1.4rem,3vw,2.4rem)}
+label{display:grid;gap:.4rem;font-weight:600;font-size:.92rem;color:#cfe6ec}
+input,select,textarea{font:inherit;color:#fff;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.18);border-radius:14px;padding:.9rem 1rem;width:100%;transition:border-color .2s,box-shadow .2s}
+select option{color:#000}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--aqua);box-shadow:0 0 0 4px rgba(25,181,200,.25)}
+textarea{min-height:110px;resize:vertical}form .btn{justify-self:start}.nt{margin:0;font-size:.88rem;color:#9cc3cf}
+@media (max-width:860px){.ct{grid-template-columns:1fr}}
+footer{background:var(--ink);color:#7fa3b2;font-size:.85rem;padding:1.6rem 0 2.4rem;border-top:1px solid rgba(255,255,255,.1)}
+footer .w1{display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between}footer a{text-decoration:none;margin-right:1.2rem}footer a:hover{color:#fff}
+.fab{position:fixed;right:max(1.1rem,env(safe-area-inset-right,0px));bottom:calc(1.1rem + env(safe-area-inset-bottom,0px));z-index:60;width:60px;height:60px;border-radius:50%;background:linear-gradient(145deg,#3be07f,#12a550);display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(18,165,80,.7),inset 0 1px 0 rgba(255,255,255,.4);transition:transform .3s cubic-bezier(.3,1.5,.5,1)}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #3be07f;animation:pu 2.6s ease-out infinite}
+@keyframes pu{to{transform:scale(1.6);opacity:0}}
+.fab svg{width:32px;height:32px;fill:#fff;position:relative}
 .fab:hover{transform:scale(1.1) rotate(-6deg)}
-
-@media (max-width:860px){
-  .burger{display:block}
-  header nav{position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:.55rem max(1.25rem,calc((100vw - 1120px)/2)) 1.25rem;border-bottom:1px solid var(--line);box-shadow:0 14px 24px rgba(6,40,61,.12);clip-path:inset(0 0 100% 0);visibility:hidden;transition:clip-path .35s cubic-bezier(.2,.8,.2,1),visibility .35s}
-  header nav.open{clip-path:inset(0);visibility:visible}
-  header nav a{padding:.9rem .25rem;font-size:1.05rem;border-bottom:1px solid rgba(10,69,96,.1)}
-  header nav a.btn.sun{margin-top:1rem;padding:.85rem 1.15rem;border:0;border-radius:14px;text-align:center}
-  .svc,.contact{grid-template-columns:1fr}
-  .panel{position:relative;top:0}
-  .steps{grid-template-columns:1fr;gap:2.2rem}
-  .line{top:22px;bottom:22px;left:22px;right:auto;width:3px;height:auto}
-  .line i{width:100%;height:0;transition:height 1.8s cubic-bezier(.3,.7,.2,1)}
-  .steps.go .line i{height:100%;width:100%}
-  .step{padding:0 0 0 4rem}
-  .step::before{top:-6px}
-  .hero{min-height:0}
-}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-  .in{opacity:1;transform:none}.steps .line i{width:100%;height:100%}
-}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none;filter:none}.w{opacity:1}}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<linearGradient id="gW" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#74e8f2"/><stop offset="1" stop-color="#0d86ad"/></linearGradient>
+<linearGradient id="gW" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#93f5f9"/><stop offset=".45" stop-color="#27c3d9"/><stop offset="1" stop-color="#0a7ca6"/></linearGradient>
+<radialGradient id="gD"><stop offset="0" stop-color="#01325a" stop-opacity=".6"/><stop offset="1" stop-color="#01325a" stop-opacity="0"/></radialGradient>
+<linearGradient id="gSun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".42"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#012a48" stop-opacity=".25"/></linearGradient>
+<linearGradient id="gE" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#cbdbe0"/></linearGradient>
+<linearGradient id="gS" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".82"/><stop offset="1" stop-color="#cdeaf0" stop-opacity=".5"/></linearGradient>
 <linearGradient id="gM" x1="0" x2="1"><stop offset="0" stop-color="#f4f8fa"/><stop offset="1" stop-color="#8fa5b0"/></linearGradient>
 <linearGradient id="gB" x1="0" x2="1"><stop offset="0" stop-color="#3a9fe0"/><stop offset="1" stop-color="#0d4f86"/></linearGradient>
-<filter id="ca" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".018 .026" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 9 0 0 0 -4.3"/></filter>
-<filter id="ca2" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".018 .026" numOctaves="2" seed="4"><animate attributeName="baseFrequency" values=".018 .026;.027 .017;.018 .026" dur="16s" repeatCount="indefinite"/></feTurbulence><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 9 0 0 0 -4.3"/></filter>
+<linearGradient id="gWl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14465f"/><stop offset="1" stop-color="#082638"/></linearGradient>
+<radialGradient id="gV" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#001e32" stop-opacity="0"/><stop offset="1" stop-color="#001e32" stop-opacity=".3"/></radialGradient>
+<pattern id="pT" width="36" height="36" patternUnits="userSpaceOnUse"><rect width="36" height="36" fill="none" stroke="rgba(0,40,60,.1)" stroke-width="1.5"/></pattern>
+<pattern id="pW" width="60" height="22" patternUnits="userSpaceOnUse"><rect width="60" height="22" fill="none" stroke="rgba(70,40,10,.17)" stroke-width="1.5"/></pattern>
+<pattern id="pQ" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="none" stroke="rgba(255,255,255,.24)" stroke-width="1"/></pattern>
+<filter id="bl" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+<filter id="bs" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.2"/></filter>
+<filter id="ca" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".022 .03" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 0 0 .25 1 .25 0 0 0 0"/></feComponentTransfer></filter>
+<filter id="ca2" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".022 .03" numOctaves="2" seed="4"><animate attributeName="baseFrequency" values=".022 .03;.03 .022;.022 .03" dur="18s" repeatCount="indefinite"/></feTurbulence><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 0 0 .25 1 .25 0 0 0 0"/></feComponentTransfer></filter>
+<filter id="cb" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".05 .06" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 0 0 .25 1 .25 0 0 0 0"/></feComponentTransfer></filter>
+<filter id="cb2" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".05 .06" numOctaves="2" seed="9"><animate attributeName="baseFrequency" values=".05 .06;.062 .045;.05 .06" dur="12s" repeatCount="indefinite"/></feTurbulence><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0 0 0 .25 1 .25 0 0 0 0"/></feComponentTransfer></filter>
 </defs></svg>
-<header>
-  <div class="wrap bar">
-    <a class="logo" href="#inicio" aria-label="KLV Pool Service, inicio"><img src="logo.png" alt="KLV Pool Service"></a>
-    <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
-    <nav id="menu">
-      <a href="#servicios">Servicios</a>
-      <a href="#trabajos">Trabajos</a>
-      <a href="#proceso">Proceso</a>
-      <a href="#faq">Preguntas</a>
-      <a href="#zona">Zona</a>
-      <a class="btn sun small" href="#contacto">Pedir presupuesto</a>
-    </nav>
-  </div>
-</header>
 
-<main id="inicio">
-<div class="hero" id="hero">
-  <div class="blob a"></div><div class="blob b"></div>
-  <div class="wrap hg"><div>
-    <h1 class="in" style="--i:0">Tu piscina, lista para disfrutar.</h1>
-    <p class="lead in" style="--i:1">Mantenimiento, rehabilitación, depuración y obra nueva en Collado Villalba y la Sierra de Madrid. Un solo equipo, de principio a fin.</p>
-    <div class="cta in" style="--i:2">
-      <a class="btn sun" href="#contacto">Pedir presupuesto gratis</a>
-      <a class="btn ghost" href="tel:692643911">Llamar al 692 643 911</a>
-    </div>
-    <div class="proof in" style="--i:3"><span><b>+7 años</b> de experiencia</span><span><b>Garantía</b> en cada trabajo</span><span><b>Sin compromiso</b> en el presupuesto</span></div></div>
-    <div class="hv in" id="hv" style="--i:2" aria-hidden="true"></div>
-  </div>
-  <div class="waves" aria-hidden="true"><canvas id="cv"></canvas></div>
-</div>
+<div class="nv"><div class="w1"><a class="lg" href="#top">KLV Pool Service</a>
+<div class="ls"><a href="#servicios">Servicios</a><a href="#galeria">Galería</a><a href="#zona">Zona</a><a href="#faq">Preguntas</a></div>
+<a class="pl" href="#contacto">Presupuesto</a></div><i id="pg"></i></div>
 
-<section id="servicios">
-  <div class="wrap">
-    <p class="kicker">Servicios</p>
-    <h2>Todo lo que necesita tu piscina.</h2>
-    <p class="sub">Para viviendas y comunidades. Elige un servicio y mira qué incluye.</p>
-    <div class="svc">
-      <div class="tabs" role="tablist" aria-label="Servicios"></div>
-      <div class="panel" role="tabpanel" aria-live="polite"><div class="swap" id="out"></div></div>
-    </div>
+<main id="top">
+<section class="hero" style="padding-bottom:0">
+  <div class="w1">
+    <p class="eb rv">KLV Pool Service · Collado Villalba</p>
+    <h1 class="rv" style="--d:.08s">Tu piscina.<br><span class="g">Siempre perfecta.</span></h1>
+    <p class="sub rv" style="--d:.18s">Mantenimiento, rehabilitación, depuración, cubiertas y obra nueva. Un solo equipo, más de 7 años cuidando el agua de la Sierra de Madrid.</p>
+    <div class="cta rv" style="--d:.28s"><a class="btn" href="#contacto">Pedir presupuesto</a><a class="lnk" href="tel:692643911">Llamar al 692 643 911</a></div>
   </div>
+  <div class="sw rv" style="--d:.4s"><div class="stage" id="stage"><div class="art" id="hart"></div>
+    <span class="chp" style="left:5%;top:9%">Collado Villalba y Sierra de Madrid</span>
+    <span class="chp" style="right:5%;top:38%;animation-delay:-2s">Garantía en cada trabajo</span>
+    <span class="chp" style="left:8%;bottom:9%;animation-delay:-4s">+7 años de experiencia</span></div></div>
 </section>
 
-<section id="trabajos" style="padding-top:0">
-  <div class="wrap">
-    <p class="kicker">Galería</p>
-    <h2>Cada servicio, de un vistazo.</h2>
-    <p class="sub">Toca una imagen para verla en grande.</p>
-    <div class="chips" id="chips" role="group" aria-label="Filtrar trabajos"></div>
-    <div class="grid" id="grid"></div>
+<section style="padding-block:clamp(4rem,10vw,8rem)"><div class="w1"><p class="bw" id="bw">Del primer filtro a la última baldosa. Mantenimiento, rehabilitación, depuración, detección de fugas, construcción, cubiertas y jardinería. Todo en un solo equipo, para que tú solo pienses en disfrutar.</p></div></section>
+
+<section class="dk pin" id="pin"><div class="st">
+  <div class="phs">
+    <div class="ph on"><p class="eb">Cubiertas</p><h2>Abierta.</h2><p>Disfruta del agua en su mejor momento.</p></div>
+    <div class="ph"><p class="eb">Cubiertas</p><h2>Cerrándose.</h2><p>Bajas, telescópicas, altas y automáticas. Manuales o motorizadas.</p></div>
+    <div class="ph"><p class="eb">Cubiertas</p><h2>Protegida.</h2><p>Más meses de baño, menos mantenimiento y más seguridad.</p></div>
   </div>
+  <div id="cov" aria-hidden="true"></div>
+</div></section>
+
+<section id="servicios"><div class="w1">
+  <p class="eb rv">Servicios</p><h2 class="rv">Siete servicios.<br><span class="g">Un solo equipo.</span></h2>
+  <p class="sub rv">De la primera limpieza a la obra nueva, para viviendas y comunidades.</p>
+  <div class="bt" id="bt"></div>
+</div></section>
+
+<section class="dk"><div class="w1"><div class="sts">
+  <div class="rv"><div class="nm" data-to="7" data-pre="+">+7</div><p>años de experiencia</p></div>
+  <div class="rv" style="--d:.12s"><div class="nm" data-to="12">12</div><p>municipios en la Sierra y Madrid</p></div>
+  <div class="rv" style="--d:.24s"><div class="nm">0 €</div><p>por el presupuesto, sin compromiso</p></div>
+</div></div></section>
+
+<section><div class="w1">
+  <p class="eb rv">Cómo trabajamos</p><h2 class="rv">Así de claro.</h2>
+  <div style="margin-top:3rem">
+    <div class="sc" style="--i:0;--c1:#06283d;--c2:#0a4560"><b>1</b><div><h3>Nos cuentas el problema</h3><p>Por teléfono, WhatsApp o formulario. Te respondemos y nos desplazamos a verla.</p></div></div>
+    <div class="sc" style="--i:1;--c1:#0a4560;--c2:#0f7893"><b>2</b><div><h3>Presupuesto sin compromiso</h3><p>Valoración detallada y una propuesta cerrada, sin improvisaciones.</p></div></div>
+    <div class="sc" style="--i:2;--c1:#0f7893;--c2:#19b5c8"><b>3</b><div><h3>Trabajo con garantía</h3><p>Lo hacemos con rapidez y limpieza, y te damos un informe de lo realizado.</p></div></div>
+  </div>
+</div></section>
+
+<section id="galeria" style="padding-top:0"><div class="w1 rh">
+  <div><p class="eb rv">Galería</p><h2 class="rv">Cada servicio, de un vistazo.</h2></div>
+  <div class="ar"><button id="pv" aria-label="Anterior">‹</button><button id="nx" aria-label="Siguiente">›</button></div></div>
+  <div class="rail" id="rail"></div>
 </section>
 
-<section class="proc" id="proceso">
-  <div class="wrap">
-    <h2>Claro desde la primera visita.</h2>
-    <p class="sub">Sin sorpresas: sabes qué vamos a hacer antes de que empecemos.</p>
-    <div class="steps" id="steps">
-      <div class="line"><i></i></div>
-      <div class="step"><h3>Nos cuentas el problema</h3><p>Por teléfono, WhatsApp o formulario. Te respondemos y nos desplazamos a verla.</p></div>
-      <div class="step"><h3>Presupuesto sin compromiso</h3><p>Valoración detallada y una propuesta cerrada, sin improvisaciones.</p></div>
-      <div class="step"><h3>Trabajo con garantía</h3><p>Lo hacemos con rapidez y limpieza, y te damos un informe de lo realizado.</p></div>
-    </div>
-  </div>
-</section>
+<section class="dk" id="zona"><div class="w1"><p class="eb rv">Dónde trabajamos</p><h2 class="rv">Cerca de ti.</h2></div><div class="mq" id="mq"></div></section>
 
-<section id="zona">
-  <div class="wrap">
-    <p class="kicker">Dónde trabajamos</p>
-    <h2>Sierra y noroeste de Madrid.</h2>
-    <div class="zone">
-      <span class="main">Collado Villalba</span><span>Galapagar</span><span>Torrelodones</span><span>Las Rozas</span><span>Las Matas</span><span>Pozuelo de Alarcón</span><span>Alpedrete</span><span>Guadarrama</span><span>Moralzarzal</span><span>Majadahonda</span><span>San Lorenzo de El Escorial</span><span>Madrid</span>
-    </div>
-  </div>
-</section>
+<section id="faq"><div class="w1"><h2 class="rv" style="text-align:center;margin-inline:auto">Preguntas frecuentes.</h2><div class="fq" id="fq"></div></div></section>
 
-<section id="faq">
-  <div class="wrap faqw">
-    <aside>
-      <p class="kicker">Preguntas frecuentes</p>
-      <h2>Resolvemos tus dudas antes de empezar.</h2>
-      <p class="sub">Si no ves la tuya, escríbenos y te contestamos.</p>
-      <a class="btn" href="#contacto">Hacer otra pregunta</a>
-    </aside>
-    <div class="faq" id="faq-list"></div>
-  </div>
-</section>
-
-<section id="contacto" style="padding-top:0">
-  <div class="wrap contact">
-    <div>
-      <p class="kicker">Contacto</p>
-      <h2>Cuéntanos qué necesitas.</h2>
-      <p class="sub">Te contestamos con una propuesta clara y sin compromiso.</p>
-      <div class="direct">
-        <a href="tel:692643911"><span>☎</span>692 643 911</a>
-        <a href="https://api.whatsapp.com/send?phone=34692643911" target="_blank" rel="noopener"><span>✆</span>Escríbenos por WhatsApp</a>
-      </div>
-    </div>
-    <form id="f" novalidate>
-      <label>Nombre<input name="n" autocomplete="name" required></label>
-      <label>Servicio<select name="s" id="sel"></select></label>
-      <label>Mensaje<textarea name="m" placeholder="Por ejemplo: el agua está turbia y el filtro hace ruido."></textarea></label>
-      <button class="btn" type="submit">Enviar por WhatsApp</button>
-      <p class="note" id="msg">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
-    </form>
-  </div>
-</section>
+<section class="dk" id="contacto"><div class="w1 ct">
+  <div class="rv"><p class="eb">Contacto</p><h2>¿Hablamos?</h2><p class="sub">Cuéntanos qué necesitas y te respondemos con una propuesta clara y sin compromiso.</p>
+    <div class="dr"><a class="lnk" href="tel:692643911">692 643 911</a><a class="lnk" href="https://api.whatsapp.com/send?phone=34692643911" target="_blank" rel="noopener">WhatsApp</a></div></div>
+  <form id="f" class="rv" style="--d:.15s" novalidate>
+    <label>Nombre<input name="n" autocomplete="name" required></label>
+    <label>Servicio<select name="s" id="sel"></select></label>
+    <label>Mensaje<textarea name="m" placeholder="Por ejemplo: el agua está turbia y el filtro hace ruido."></textarea></label>
+    <button class="btn" type="submit">Enviar por WhatsApp</button><p class="nt" id="msg">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+  </form></div></section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <span>© 2026 KLV Pool Service · Collado Villalba, Sierra de Madrid</span>
-    <span><a href="https://klvpoolservice.com/aviso-legal">Aviso legal</a><a href="https://klvpoolservice.com/politica-de-privacidad">Privacidad</a><a href="https://klvpoolservice.com/politica-de-cookies-ue">Cookies</a></span>
-  </div>
-</footer>
-<a class="fab" href="https://api.whatsapp.com/send?phone=34692643911" target="_blank" rel="noopener" aria-label="WhatsApp"><span style="font-size:26px;color:#fff;line-height:1">✆</span></a>
+<footer><div class="w1"><span>© 2026 KLV Pool Service · Collado Villalba, Sierra de Madrid</span><span><a href="https://klvpoolservice.com/aviso-legal">Aviso legal</a><a href="https://klvpoolservice.com/politica-de-privacidad">Privacidad</a><a href="https://klvpoolservice.com/politica-de-cookies-ue">Cookies</a></span></div></footer>
+<a class="fab" href="https://api.whatsapp.com/send?phone=34692643911" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
 
 <script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)],still=matchMedia("(prefers-reduced-motion:reduce)").matches,cl=x=>Math.max(0,Math.min(1,x));
+let N=0;
+const DECK=["#dfe9ec","#dcc9a2","#d0ddd7","#dde3ee"];
+const bush=(x,y,r)=>`<ellipse cx="${x+4}" cy="${y+6}" rx="${r}" ry="${r*.9}" fill="#000" opacity=".25" filter="url(#bs)"/><circle cx="${x}" cy="${y}" r="${r}" fill="#2a8555"/><circle cx="${x-r*.22}" cy="${y-r*.22}" r="${r*.72}" fill="#3eab70"/><circle cx="${x-r*.38}" cy="${y-r*.38}" r="${r*.36}" fill="#86e0a8"/>`;
+const lounger=(x,y)=>`<rect x="${x+3}" y="${y+5}" width="26" height="78" rx="9" fill="#000" opacity=".25" filter="url(#bs)"/><rect x="${x}" y="${y}" width="26" height="78" rx="9" fill="#fff"/><rect x="${x+3}" y="${y+24}" width="20" height="50" rx="6" fill="#d6edf2"/><rect x="${x+3}" y="${y+4}" width="20" height="17" rx="6" fill="#b9e0e8"/>`;
+function parasol(x,y,r){let s=`<circle cx="${x+4}" cy="${y+7}" r="${r}" fill="#000" opacity=".22" filter="url(#bs)"/>`;for(let j=0;j<8;j++){const a=j*Math.PI/4,b=a+Math.PI/4;s+=`<path d="M${x} ${y}L${x+r*Math.cos(a)} ${y+r*Math.sin(a)}A${r} ${r} 0 0 1 ${x+r*Math.cos(b)} ${y+r*Math.sin(b)}Z" fill="${j%2?"#19b5c8":"#fff"}"/>`}return s+`<circle cx="${x}" cy="${y}" r="4" fill="#e8f1f4"/>`}
+function seg(x,y,w,h,win,c){const rb=win?"rgba(255,255,255,.2)":"rgba(255,255,255,.75)";return `<g${c?` class="${c}"`:""}><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="5" fill="${win?"rgba(18,48,68,.82)":"url(#gS)"}" stroke="#c7d6dc" stroke-width="3"/><path d="M${x+w*.25} ${y+6}V${y+h-6}M${x+w*.5} ${y+6}V${y+h-6}M${x+w*.75} ${y+6}V${y+h-6}" stroke="${rb}" stroke-width="2"/><rect x="${x+4}" y="${y+5}" width="${w*.1}" height="${h-10}" rx="4" fill="#fff" opacity=".3"/></g>`}
+function poolSvg(n,x,y,w,h,r,f){
+  const g=f.replace("ca","cb"),R=`x="${x}" y="${y}" width="${w}" height="${h}"`;
+  return `<clipPath id="c${n}"><rect ${R} rx="${r}"/></clipPath>
+<rect x="${x-8}" y="${y-4}" width="${w+16}" height="${h+16}" rx="${r+16}" fill="#001e32" opacity=".28" filter="url(#bl)"/>
+<rect x="${x-15}" y="${y-15}" width="${w+30}" height="${h+30}" rx="${r+15}" fill="url(#gE)" stroke="rgba(0,40,60,.14)" stroke-width="1.5"/>
+<rect x="${x-4}" y="${y-4}" width="${w+8}" height="${h+8}" rx="${r+4}" fill="#a9dbe3" stroke="#7fbac6" stroke-width="1.5"/>
+<rect ${R} rx="${r}" fill="url(#gW)"/>
+<g clip-path="url(#c${n})"><ellipse cx="${x+w*.6}" cy="${y+h*.64}" rx="${w*.56}" ry="${h*.52}" fill="url(#gD)"/>
+<rect ${R} rx="${r}" fill="none" stroke="#02405f" stroke-width="18" opacity=".5" filter="url(#bl)"/>
+<rect ${R} filter="url(#${f})" opacity=".62"/><rect ${R} filter="url(#${g})" opacity=".3"/><rect ${R} fill="url(#gSun)"/>
+<ellipse cx="${x+w*.3}" cy="${y+h*.26}" rx="${w*.08}" ry="${h*.03}" fill="#fff" opacity=".75" filter="url(#bs)"/><ellipse cx="${x+w*.72}" cy="${y+h*.4}" rx="${w*.05}" ry="${h*.02}" fill="#fff" opacity=".6" filter="url(#bs)"/>
+<circle cx="${x+w*.45}" cy="${y+h*.7}" r="${h*.08}" fill="none" stroke="#fff" stroke-width="1.5" opacity=".3"/><circle cx="${x+w*.45}" cy="${y+h*.7}" r="${h*.14}" fill="none" stroke="#fff" stroke-width="1" opacity=".18"/></g>`;
+}
+function scene(k,v=0,f="ca"){
+  const n=++N,i=v%4,pw=[240,262,226,250][i],ph=[222,202,244,214][i],x=(400-pw)/2,y=(400-ph)/2,r=[34,70,24,52][i];
+  let s='<svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">';
+  if(k==="d"){
+    s+=`<rect width="400" height="400" fill="url(#gWl)"/><rect width="400" height="400" fill="url(#pT)" opacity=".5"/><rect y="296" width="400" height="104" fill="#071d2b"/><rect y="294" width="400" height="4" fill="#19b5c8" opacity=".55"/><circle cx="330" cy="70" r="62" fill="#19b5c8" opacity=".25" filter="url(#bl)"/>
+    <path d="M172 98V54H318V212M268 262H234" stroke="#7d98a4" stroke-width="19" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M172 98V54H318V212M268 262H234" stroke="#dbe9ee" stroke-width="13" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M178 98V60H312" stroke="#fff" stroke-width="3" opacity=".7" fill="none"/>
+    <ellipse cx="170" cy="304" rx="84" ry="11" fill="#000" opacity=".35"/><rect x="105" y="125" width="130" height="175" rx="22" fill="url(#gB)"/><ellipse cx="170" cy="128" rx="65" ry="18" fill="#58bdf3"/><path d="M105 168H235M105 262H235" stroke="#0a3a63" stroke-width="3" opacity=".45"/>
+    <rect x="152" y="84" width="36" height="30" rx="7" fill="url(#gM)"/><rect x="118" y="142" width="14" height="138" rx="7" fill="#fff" opacity=".25"/>
+    <circle cx="170" cy="212" r="29" fill="#fff" stroke="#cfe0e6" stroke-width="6"/><circle cx="170" cy="212" r="21" fill="none" stroke="#9fb2bb" stroke-width="1.5" stroke-dasharray="2 5"/><path d="M170 212L${187-i*6} ${194+i*4}" stroke="#e5484d" stroke-width="4" stroke-linecap="round"/><circle cx="170" cy="212" r="4" fill="#334"/>
+    <rect x="268" y="215" width="96" height="84" rx="16" fill="#eef3f5"/><path d="M290 226V290M306 226V290M322 226V290" stroke="#c4d3d9" stroke-width="3"/><circle cx="268" cy="257" r="31" fill="url(#gM)"/><circle cx="268" cy="257" r="12" fill="#6f8794"/><rect x="288" y="196" width="56" height="22" rx="8" fill="#9fb2bb"/>`;
+  } else {
+    s+=`<rect width="400" height="400" fill="${DECK[i]}"/><rect width="400" height="400" fill="url(#${i===1?"pW":"pT"})"/><rect width="400" height="400" fill="url(#gV)"/>`;
+    s+=bush(26,30,24)+bush(374,374,28)+bush(372,30,16)+lounger(x+pw+24,y+6)+lounger(x+pw+24,y+96);
+    s+=i%2?bush(40,366,20):parasol(60,364,28);
+    s+=poolSvg(n,x,y,pw,ph,r,f);
+    s+=`<g fill="rgba(255,255,255,.5)" stroke="rgba(255,255,255,.8)" stroke-width="1.5"><rect x="${x+5}" y="${y+14}" width="54" height="13" rx="6.5"/><rect x="${x+5}" y="${y+32}" width="38" height="13" rx="6.5"/><rect x="${x+5}" y="${y+50}" width="22" height="13" rx="6.5"/></g><path d="M${x+pw-44} ${y-9}v24M${x+pw-28} ${y-9}v24" stroke="url(#gM)" stroke-width="5" stroke-linecap="round"/>`;
+    if(k==="r")s+=`<g clip-path="url(#c${n})"><rect x="${x}" y="${y}" width="${pw}" height="${ph}" fill="url(#pQ)"/></g>`;
+    if(k==="c"){
+      const sw=pw/4,cv=i>1?4:2+i;
+      s+=`<g clip-path="url(#c${n})">`;for(let j=0;j<cv;j++)s+=seg(x+j*sw,y,sw,ph,i===3);
+      s+=`</g><rect x="${x-12}" y="${y-22}" width="${pw+24}" height="9" rx="4.5" fill="url(#gM)"/><rect x="${x-12}" y="${y+ph+13}" width="${pw+24}" height="9" rx="4.5" fill="url(#gM)"/>`;
+    }
+    if(k==="f"){
+      const cx=x+pw*.62,cy=y+ph*.5;
+      s+=`<circle cx="${cx}" cy="${cy}" r="56" fill="rgba(255,255,255,.14)"/><circle cx="${cx}" cy="${cy}" r="14" fill="none" stroke="#fff" stroke-width="3" opacity=".9"/><circle cx="${cx}" cy="${cy}" r="27" fill="none" stroke="#fff" stroke-width="2.5" opacity=".65"/><circle cx="${cx}" cy="${cy}" r="40" fill="none" stroke="#fff" stroke-width="2" opacity=".4"/>
+      <circle cx="${cx}" cy="${cy}" r="56" fill="none" stroke="#ffc857" stroke-width="10"/><circle cx="${cx}" cy="${cy}" r="61" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="2"/><path d="M${cx-44} ${cy-22}A49 49 0 0 1 ${cx-20} ${cy-44}" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".65"/><path d="M${cx+40} ${cy+40}L${cx+90} ${cy+90}" stroke="#d48a12" stroke-width="18" stroke-linecap="round"/><path d="M${cx+40} ${cy+40}L${cx+90} ${cy+90}" stroke="#ffc857" stroke-width="12" stroke-linecap="round"/>`;
+    }
+  }
+  return s+"</svg>";
+}
+
 const S=[
 {n:"Mantenimiento",t:"Mantenimiento de piscinas",d:"Agua cristalina todo el año, en piscinas privadas y comunitarias.",l:["Limpieza periódica y control de cloro, pH y alcalinidad","Revisión de filtros, motores y válvulas","Programas adaptados a cada temporada","Informe mensual del estado del agua y los equipos"]},
 {n:"Rehabilitación",t:"Rehabilitación de piscinas",d:"Devolvemos a tu piscina su estética y su estanqueidad.",l:["Revestimientos de gresite, cerámica y lámina armada","Reparación de grietas, juntas y zonas huecas","Nuevas escaleras, focos LED y cloración","Renovación del vaso sin alterar la estructura"]},
@@ -345,125 +297,6 @@ const S=[
 {n:"Construcción",t:"Construcción a medida",d:"Tu piscina nueva, del diseño a la última baldosa.",l:["Piscinas gunitadas, prefabricadas o de bloque","Opciones climatizadas y desbordantes","Asesoramiento en iluminación y revestimientos","Legalización del proyecto y gestión de licencias"]},
 {n:"Cubiertas",t:"Cubiertas para piscinas",d:"Más meses de baño, menos mantenimiento y más seguridad.",l:["Bajas, telescópicas, altas y automáticas","Cubiertas de verano y de invierno","Aluminio termolacado y policarbonato con protección UV","Manuales, motorizadas o totalmente automáticas"]},
 {n:"Jardinería",t:"Jardinería",d:"Un jardín a la altura de tu piscina.",l:["Poda, césped y mantenimiento general","Instalación de riego automático","Diseño de jardines","Control biológico de plagas"]}];
-const $=s=>document.querySelector(s),tabs=$(".tabs"),out=$("#out"),sel=$("#sel");
-S.forEach((s,i)=>{
-  const b=document.createElement("button");b.className="tab";b.role="tab";b.textContent=s.n;b.setAttribute("aria-selected",i===0);
-  b.onclick=()=>show(i);tabs.append(b);
-  sel.add(new Option(s.t,s.t));
-});
-function show(i){
-  tabs.querySelectorAll(".tab").forEach((t,k)=>t.setAttribute("aria-selected",k===i));
-  const s=S[i];
-  out.className="";void out.offsetWidth;out.className="swap";
-  out.innerHTML=`<h3>${s.t}</h3><p>${s.d}</p><ul>${s.l.map(x=>`<li>${x}</li>`).join("")}</ul><a class="btn" href="#contacto" data-s="${i}">Pedir presupuesto</a>`;
-  out.querySelector("a").onclick=()=>{sel.selectedIndex=i};
-}
-show(0);
-
-/* Menú móvil */
-const bg=$(".burger"),nv=$("#menu");
-bg.onclick=()=>{const o=nv.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
-nv.querySelectorAll("a").forEach(a=>a.onclick=()=>{nv.classList.remove("open");bg.setAttribute("aria-expanded",false)});
-
-/* Ondas bajo el puntero en el hero */
-const hero=$("#hero");let last=0;
-hero.addEventListener("pointermove",e=>{
-  const t=performance.now();if(t-last<140)return;last=t;
-  const r=hero.getBoundingClientRect(),d=document.createElement("span");
-  d.className="ripple";d.style.left=e.clientX-r.left+"px";d.style.top=e.clientY-r.top+"px";
-  hero.append(d);setTimeout(()=>d.remove(),1400);
-});
-
-/* La línea del proceso se completa al llegar */
-new IntersectionObserver((e,o)=>{if(e[0].isIntersecting){$("#steps").classList.add("go");o.disconnect()}},{threshold:.35}).observe($("#steps"));
-
-/* Escenas ilustradas (sin fotos externas: siempre se ven) */
-let N=0;
-function scene(k,v=0,f="ca"){
-  const n=++N,i=v%4,DK=["#dbe5e9","#e8e0d0","#d0dbd5","#dde2ea"][i],pw=[260,292,240,276][i],ph=[250,226,272,240][i],px=(400-pw)/2,py=(400-ph)/2,rr=[30,64,22,46][i];
-  let s='<svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">';
-  if(k==="d"){
-    s+=`<rect width="400" height="400" fill="#0d3249"/><rect y="300" width="400" height="100" fill="#09222f"/><circle cx="340" cy="60" r="46" fill="#19b5c8" opacity=".25"/>
-    <path d="M170 100V58H330V215M268 257H236" stroke="#cfe0e6" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <ellipse cx="170" cy="302" rx="80" ry="10" fill="#000" opacity=".3"/><rect x="105" y="125" width="130" height="175" rx="22" fill="url(#gB)"/><ellipse cx="170" cy="128" rx="65" ry="18" fill="#4bb6f0"/>
-    <rect x="152" y="84" width="36" height="30" rx="7" fill="url(#gM)"/><rect x="118" y="142" width="14" height="138" rx="7" fill="#fff" opacity=".22"/>
-    <circle cx="170" cy="210" r="27" fill="#fff" stroke="#cfe0e6" stroke-width="6"/><path d="M170 210L${186-i*6} ${192+i*4}" stroke="#e5484d" stroke-width="4" stroke-linecap="round"/>
-    <rect x="268" y="215" width="96" height="84" rx="16" fill="#eef3f5"/><circle cx="268" cy="257" r="30" fill="url(#gM)"/><rect x="288" y="196" width="56" height="22" rx="8" fill="#9fb2bb"/>`;
-  } else {
-    s+=`<rect width="400" height="400" fill="${DK}"/>`;
-    [[28,28,22],[372,372,26],[372,36,16],[30,372,18]].forEach(([x,y,r],j)=>s+=`<circle cx="${x}" cy="${y}" r="${r}" fill="#3f9d6a" opacity="${.6+j*.1}"/><circle cx="${x-r/4}" cy="${y-r/4}" r="${r*.55}" fill="#62c08a"/>`);
-    s+=`<rect x="${px}" y="${py+ph+24}" width="64" height="22" rx="9" fill="#fff"/><rect x="${px+78}" y="${py+ph+24}" width="64" height="22" rx="9" fill="#fff"/>
-    <clipPath id="c${n}"><rect x="${px}" y="${py}" width="${pw}" height="${ph}" rx="${rr}"/></clipPath>
-    <rect x="${px-14}" y="${py-14}" width="${pw+28}" height="${ph+28}" rx="${rr+12}" fill="#f4fbfc"/>
-    <rect x="${px}" y="${py}" width="${pw}" height="${ph}" rx="${rr}" fill="url(#gW)"/>
-    <g clip-path="url(#c${n})"><rect x="${px}" y="${py}" width="${pw}" height="${ph}" filter="url(#${f})" opacity=".45"/></g>
-    <g fill="#fff" opacity=".4"><rect x="${px}" y="${py+12}" width="52" height="12" rx="6"/><rect x="${px}" y="${py+30}" width="36" height="12" rx="6"/><rect x="${px}" y="${py+48}" width="20" height="12" rx="6"/></g>`;
-    if(k==="r")s+=`<rect x="${px+6}" y="${py+6}" width="${pw-12}" height="${ph-12}" rx="${rr-4}" fill="none" stroke="#a6eef5" stroke-width="3" stroke-dasharray="10 5"/>`;
-    if(k==="c"){
-      const sw=pw/4,cv=i>1?4:2+i,w=i===3;
-      s+=`<rect x="${px-8}" y="${py-10}" width="${pw+16}" height="8" rx="4" fill="#9fb2bb"/><rect x="${px-8}" y="${py+ph+2}" width="${pw+16}" height="8" rx="4" fill="#9fb2bb"/>`;
-      for(let j=0;j<cv;j++)s+=`<rect x="${px+j*sw+1}" y="${py-6}" width="${sw-2}" height="${ph+12}" rx="5" fill="${w?"rgba(24,58,80,.62)":"rgba(236,249,251,.55)"}" stroke="#b9c9d0" stroke-width="4"/><path d="M${px+j*sw+sw*.3} ${py+4}v${ph-8}" stroke="rgba(255,255,255,.55)" stroke-width="7" stroke-linecap="round"/>`;
-    }
-    if(k==="f"){
-      const cx=px+pw*.62,cy=py+ph*.45;
-      s+=`<circle cx="${cx}" cy="${cy}" r="16" fill="none" stroke="#fff" stroke-width="3" opacity=".85"/><circle cx="${cx}" cy="${cy}" r="30" fill="none" stroke="#fff" stroke-width="2" opacity=".5"/>
-      <circle cx="${cx}" cy="${cy}" r="54" fill="rgba(255,255,255,.16)" stroke="#ffc857" stroke-width="10"/><path d="M${cx+38} ${cy+38}L${cx+82} ${cy+82}" stroke="#ffc857" stroke-width="15" stroke-linecap="round"/>`;
-    }
-  }
-  return s+"</svg>";
-}
-$("#hv").innerHTML='<div class="card">'+scene("a",1,"ca2")+'</div>';
-if(matchMedia("(prefers-reduced-motion:reduce)").matches)document.querySelectorAll("animate").forEach(a=>a.remove());
-
-/* Olas del hero (canvas) */
-const cv=$("#cv"),cx=cv.getContext("2d"),still=matchMedia("(prefers-reduced-motion:reduce)").matches;
-let W,H,T=0,BG="#f3fafb",run=true;
-const L=[{a:.2,f:1.2,s:.5,o:0,c:"rgba(25,181,200,.5)"},{a:.17,f:1.9,s:-.7,o:1.7,c:"rgba(127,227,238,.45)"},{a:.13,f:1.5,s:.35,o:3.1,c:"rgba(255,255,255,.3)"},{a:.09,f:2.4,s:-.45,o:4.4,bg:1}];
-function rs(){const r=Math.min(devicePixelRatio||1,2),b=cv.getBoundingClientRect();W=cv.width=b.width*r;H=cv.height=b.height*r;BG=getComputedStyle(document.body).backgroundColor}
-function dw(){
-  cx.clearRect(0,0,W,H);
-  L.forEach((l,j)=>{
-    const base=H*(.4+j*.15),amp=H*l.a*(.75+.25*Math.sin(T*.4+j)),p=[];
-    for(let x=0;x<=W+10;x+=10){const u=x/W*6.283*l.f;p.push([x,base+Math.sin(u+T*l.s+l.o)*amp+Math.sin(u*2.3-T*l.s*1.3)*amp*.35])}
-    cx.beginPath();cx.moveTo(0,H);p.forEach(q=>cx.lineTo(q[0],q[1]));cx.lineTo(W,H);cx.closePath();
-    if(l.bg)cx.fillStyle=BG;else{const g=cx.createLinearGradient(0,base-amp,0,H);g.addColorStop(0,l.c);g.addColorStop(1,"rgba(25,181,200,0)");cx.fillStyle=g}
-    cx.fill();
-    if(!l.bg){cx.beginPath();p.forEach((q,k)=>k?cx.lineTo(q[0],q[1]):cx.moveTo(q[0],q[1]));cx.strokeStyle="rgba(255,255,255,"+(.5-j*.12)+")";cx.lineWidth=2*(devicePixelRatio||1);cx.stroke()}
-  });
-}
-function lp(){if(run&&!still){T+=.016;dw()}requestAnimationFrame(lp)}
-rs();dw();addEventListener("resize",()=>{rs();dw()});matchMedia("(prefers-color-scheme:dark)").addEventListener("change",()=>{rs();dw()});
-new IntersectionObserver(e=>run=e[0].isIntersecting).observe(hero);
-if(!still)lp();
-
-/* Galería */
-const B="https://klvpoolservice.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-";
-const CAT={all:"Todos",c:"Cubiertas",r:"Rehabilitación",d:"Depuración",f:"Fugas"};
-const G=[["c","13-at-06.37.14-3-2","Cubierta telescópica de verano",0],["r","15-at-12.37.08-8","Rehabilitación con revestimiento nuevo",1],["d","15-at-12.26.05-1","Equipo de depuración y filtrado",0],["c","13-at-06.29.55-1","Cubierta de invierno",3],["f","15-at-12.23.24-2","Detección de fugas",2],["r","15-at-12.37.08-1","Renovación del vaso",2],["c","13-at-06.37.14-5-2","Cubierta automática",1],["d","15-at-12.25.43-1","Filtro y cuadro eléctrico",1],["r","15-at-12.37.08-6","Rehabilitación de piscina",3],["f","15-at-12.24.12-1","Prueba de presión",0],["d","15-at-12.29.29","Sala de máquinas",2],["c","13-at-06.37.14-8-2","Cubierta de media altura",2]].map(([k,f,t,v])=>({k,t,v,u:B+f+".jpeg"}));
-const grid=$("#grid"),chips=$("#chips"),lb=document.createElement("div");
-let cur=[],ix=0;
-Object.entries(CAT).forEach(([k,v],i)=>{const b=document.createElement("button");b.className="chip";b.textContent=v;b.setAttribute("aria-pressed",i===0);b.onclick=()=>{chips.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));draw(k)};chips.append(b)});
-function draw(k){
-  cur=G.filter(g=>k==="all"||g.k===k);grid.innerHTML="";
-  cur.forEach((g,i)=>{const b=document.createElement("button");b.className="shot"+(i===0?" big":"");b.style.setProperty("--k",i);b.setAttribute("aria-label","Ampliar: "+g.t);
-    b.innerHTML=`<div class="art">${scene(g.k,g.v)}</div><img src="${g.u}" data-i="${i}" alt="${g.t}" loading="lazy" referrerpolicy="no-referrer"><span>${g.t}</span>`;b.onclick=()=>openLb(i);grid.append(b)});
-}
-grid.addEventListener("load",e=>{if(e.target.tagName==="IMG")cur[+e.target.dataset.i].ok=1},true);
-grid.addEventListener("error",e=>{if(e.target.tagName==="IMG")e.target.remove()},true);
-lb.className="lb";lb.setAttribute("role","dialog");lb.setAttribute("aria-modal","true");lb.setAttribute("aria-label","Galería");
-lb.innerHTML='<button class="x" aria-label="Cerrar">✕</button><button class="p" aria-label="Anterior">‹</button><button class="n" aria-label="Siguiente">›</button><figure></figure><div class="cap"></div>';
-document.body.append(lb);
-const lf=lb.querySelector("figure");
-function openLb(i){ix=(i+cur.length)%cur.length;const g=cur[ix];lf.innerHTML=g.ok?`<img src="${g.u}" alt="${g.t}" referrerpolicy="no-referrer">`:`<div class="art">${scene(g.k,g.v)}</div>`;lb.querySelector(".cap").textContent=g.t+" · "+(ix+1)+"/"+cur.length;lb.classList.add("open");document.body.style.overflow="hidden"}
-function closeLb(){lb.classList.remove("open");document.body.style.overflow=""}
-lb.querySelector(".x").onclick=closeLb;lb.querySelector(".p").onclick=()=>openLb(ix-1);lb.querySelector(".n").onclick=()=>openLb(ix+1);
-lb.onclick=e=>{if(e.target===lb||e.target===lf)closeLb()};
-addEventListener("keydown",e=>{if(!lb.classList.contains("open"))return;if(e.key==="Escape")closeLb();if(e.key==="ArrowLeft")openLb(ix-1);if(e.key==="ArrowRight")openLb(ix+1)});
-let x0=0;lb.addEventListener("touchstart",e=>x0=e.touches[0].clientX,{passive:true});
-lb.addEventListener("touchend",e=>{const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)openLb(ix+(d<0?1:-1))});
-draw("all");
-
-/* FAQ */
 const Q=[
 ["¿El presupuesto tiene algún coste?","No. El presupuesto es sin compromiso: valoramos tu piscina y te proponemos una solución antes de que decidas nada."],
 ["¿Trabajan con comunidades y con particulares?","Con ambos. Mantenemos piscinas de comunidades de vecinos y de viviendas, y adaptamos el servicio a cada caso."],
@@ -473,19 +306,84 @@ const Q=[
 ["¿Se ocupan de los permisos en una obra nueva?","Sí. En la construcción de piscinas a medida gestionamos la legalización del proyecto y las licencias."],
 ["¿Los trabajos tienen garantía?","Sí, trabajamos con garantía. Pídenos que te detalle las condiciones de tu caso en el presupuesto."],
 ["¿Cómo puedo contactar con vosotros?","Por teléfono en el 692 643 911, por WhatsApp o con el formulario de esta página. Te respondemos con una propuesta clara."]];
-const fl=$("#faq-list");
-Q.forEach(([q,a],i)=>{const d=document.createElement("div");d.className="q";d.innerHTML=`<h3 style="font-size:inherit;letter-spacing:0"><button aria-expanded="false" aria-controls="a${i}">${q}</button></h3><div class="a" id="a${i}" role="region"><div><p>${a}</p></div></div>`;
-  d.querySelector("button").onclick=e=>{const o=!d.classList.contains("open");fl.querySelectorAll(".q").forEach(x=>{x.classList.remove("open");x.querySelector("button").setAttribute("aria-expanded",false)});if(o){d.classList.add("open");e.currentTarget.setAttribute("aria-expanded",true)}};fl.append(d)});
-fl.firstElementChild.querySelector("button").click();
+const B="https://klvpoolservice.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-";
+const G=[["c","13-at-06.37.14-3-2","Cubierta telescópica de verano",0],["r","15-at-12.37.08-8","Rehabilitación con revestimiento nuevo",1],["d","15-at-12.26.05-1","Equipo de depuración y filtrado",0],["c","13-at-06.29.55-1","Cubierta de invierno",3],["f","15-at-12.23.24-2","Detección de fugas",2],["r","15-at-12.37.08-1","Renovación del vaso",2],["c","13-at-06.37.14-5-2","Cubierta automática",1],["d","15-at-12.25.43-1","Filtro y cuadro eléctrico",1],["r","15-at-12.37.08-6","Rehabilitación de piscina",3],["f","15-at-12.24.12-1","Prueba de presión",0],["d","15-at-12.29.29","Sala de máquinas",2],["c","13-at-06.37.14-8-2","Cubierta de media altura",2]].map(([k,f,t,v])=>({k,t,v,u:B+f+".jpeg"}));
+
+const CL={c:"Cubiertas",r:"Rehabilitación",d:"Depuración",f:"Fugas"};
+
+/* Hero */
+$("#hart").innerHTML=scene("a",1,"ca2");
+if(still)$$("animate").forEach(a=>a.remove());
+const stage=$("#stage");
+stage.parentElement.addEventListener("pointermove",e=>{if(e.pointerType!=="mouse")return;const r=stage.getBoundingClientRect();stage.style.setProperty("--ry",((e.clientX-r.left)/r.width-.5)*7+"deg");stage.style.setProperty("--rx",(.5-(e.clientY-r.top)/r.height)*5+"deg")});
+stage.parentElement.addEventListener("pointerleave",()=>{stage.style.setProperty("--rx","0deg");stage.style.setProperty("--ry","0deg")});
+
+/* Revelado */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12,rootMargin:"0px 0px -5% 0px"});
+function obs(){$$(".rv:not(.in)").forEach(el=>still?el.classList.add("in"):io.observe(el))}
+
+/* Palabras */
+const bw=$("#bw");bw.innerHTML=bw.textContent.trim().split(" ").map(w=>`<span class="w">${w}</span>`).join(" ");const ws=$$(".w");
+
+/* Cubierta que se cierra con el scroll */
+const px=130,py=84,pw=540,ph=292,sw=pw/5;
+$("#cov").innerHTML=`<svg viewBox="0 0 800 470"><defs><radialGradient id="gG"><stop offset=".55" stop-color="#19b5c8" stop-opacity=".55"/><stop offset="1" stop-color="#19b5c8" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="470" rx="30" fill="#07263a"/><rect width="800" height="470" rx="30" fill="url(#pT)" opacity=".7"/><ellipse cx="400" cy="235" rx="400" ry="250" fill="url(#gG)" opacity=".5"/>
+${poolSvg(90,px,py,pw,ph,46,"ca2")}
+<g clip-path="url(#c90)">${[0,1,2,3,4].map(()=>seg(px,py,sw,ph,false,"sx")).join("")}</g>
+<rect x="${px-12}" y="${py-24}" width="${pw+24}" height="10" rx="5" fill="url(#gM)"/><rect x="${px-12}" y="${py+ph+14}" width="${pw+24}" height="10" rx="5" fill="url(#gM)"/></svg>`;
+const sx=$$(".sx"),phs=$$(".ph"),pin=$("#pin");
+function setCover(p){const e=cl((p-.08)/.7),k=e*e*(3-2*e);sx.forEach((r,i)=>r.setAttribute("transform","translate("+(i*sw*k)+" 0)"));const n=p<.36?0:p<.74?1:2;phs.forEach((h,i)=>h.classList.toggle("on",i===n))}
+
+/* Scroll */
+let tk=0;
+function frame(){
+  tk=0;const vh=innerHeight;
+  const sr=stage.parentElement.getBoundingClientRect();stage.style.setProperty("--s",(.88+.12*cl(1-sr.top/(vh*.65))).toFixed(3));
+  const r=bw.getBoundingClientRect(),p=cl((vh*.82-r.top)/(r.height+vh*.3));ws.forEach((w,i)=>w.classList.toggle("on",i<p*ws.length*1.12));
+  const pr=pin.getBoundingClientRect();setCover(cl(-pr.top/(pr.height-vh)));
+  $("#pg").style.width=100*scrollY/(document.documentElement.scrollHeight-vh)+"%";
+}
+if(still){ws.forEach(w=>w.classList.add("on"));setCover(1);stage.style.setProperty("--s",1)}
+else{addEventListener("scroll",()=>{if(!tk)tk=requestAnimationFrame(frame)},{passive:true});addEventListener("resize",frame);frame()}
+
+/* Servicios */
+const SP=[7,5,4,4,4,6,6],AR=[["a",0],["r",1],["d",0],["f",2],["a",3],["c",1],["a",2]];
+const RP='<div class="rp"><b>Informe mensual</b><span>pH</span><span>Cloro</span><span>Alcalinidad</span></div>';
+$("#bt").innerHTML=S.map((s,i)=>`<article class="cd rv" style="--sp:${SP[i]};--d:${(i%3)*.1}s"><div class="art">${scene(AR[i][0],AR[i][1])}</div><span class="nb">0${i+1}</span>${i===0?RP:""}<div class="tx"><h3>${s.t}</h3><p>${s.d}</p><ul>${s.l.slice(0,2).map(x=>`<li>${x}</li>`).join("")}</ul><a class="lnk" href="#contacto" data-i="${i}">Pedir presupuesto</a></div></article>`).join("");
+const sel=$("#sel");S.forEach(s=>sel.add(new Option(s.t,s.t)));
+$("#bt").addEventListener("click",e=>{const a=e.target.closest("a[data-i]");if(a)sel.selectedIndex=+a.dataset.i});
+
+/* Cifras */
+new IntersectionObserver((es,o)=>es.forEach(e=>{if(!e.isIntersecting)return;o.unobserve(e.target);const el=e.target,to=+el.dataset.to,pre=el.dataset.pre||"",t0=performance.now();
+  (function s(t){const k=cl((t-t0)/1700),v=Math.round(to*(1-Math.pow(1-k,4)));el.textContent=pre+v;if(k<1)requestAnimationFrame(s)})(t0)}),{threshold:.6}).observe=undefined;
+const cio=new IntersectionObserver((es,o)=>es.forEach(e=>{if(!e.isIntersecting)return;o.unobserve(e.target);if(still)return;const el=e.target,to=+el.dataset.to,pre=el.dataset.pre||"",t0=performance.now();
+  (function s(t){const k=cl((t-t0)/1700),v=Math.round(to*(1-Math.pow(1-k,4)));el.textContent=pre+v;if(k<1)requestAnimationFrame(s)})(t0)}),{threshold:.6});
+$$(".nm[data-to]").forEach(n=>cio.observe(n));
+
+/* Galería */
+$("#rail").innerHTML=G.map(g=>`<figure class="it"><div class="art">${scene(g.k,g.v)}</div><img src="${g.u}" alt="${g.t}" loading="lazy" referrerpolicy="no-referrer"><figcaption><small>${CL[g.k]}</small>${g.t}</figcaption></figure>`).join("");
+$("#rail").addEventListener("error",e=>{if(e.target.tagName==="IMG")e.target.remove()},true);
+$("#pv").onclick=()=>$("#rail").scrollBy({left:-$("#rail").clientWidth*.7,behavior:"smooth"});
+$("#nx").onclick=()=>$("#rail").scrollBy({left:$("#rail").clientWidth*.7,behavior:"smooth"});
+
+/* Zona */
+const Z=["Collado Villalba","Galapagar","Torrelodones","Las Rozas","Las Matas","Pozuelo de Alarcón","Alpedrete","Guadarrama","Moralzarzal","Majadahonda","San Lorenzo de El Escorial","Madrid"],zr=a=>`<div>${a.concat(a).map(z=>`<span${z==="Collado Villalba"?' class="hl"':""}>${z}</span>`).join("")}</div>`;
+$("#mq").innerHTML=zr(Z)+zr(Z.slice().reverse());
+
+/* FAQ */
+const fl=$("#fq");
+Q.forEach(([q,a],i)=>{const d=document.createElement("div");d.className="q";d.innerHTML=`<h3 style="font-size:inherit"><button aria-expanded="false" aria-controls="a${i}">${q}</button></h3><div class="a" id="a${i}" role="region"><div><p>${a}</p></div></div>`;
+  d.querySelector("button").onclick=e=>{const o=!d.classList.contains("open");$$(".q",fl).forEach(x=>{x.classList.remove("open");$("button",x).setAttribute("aria-expanded",false)});if(o){d.classList.add("open");e.currentTarget.setAttribute("aria-expanded",true)}};fl.append(d)});
+$("button",fl).click();
 
 /* Formulario → WhatsApp */
-$("#f").onsubmit=e=>{
-  e.preventDefault();const f=e.target,n=f.n.value.trim();
+$("#f").onsubmit=e=>{e.preventDefault();const f=e.target,n=f.n.value.trim();
   if(!n){$("#msg").textContent="Escribe tu nombre para continuar.";f.n.focus();return}
-  const txt=`Hola, soy ${n}. Me interesa: ${f.s.value}.${f.m.value.trim()?" "+f.m.value.trim():""}`;
-  window.open("https://api.whatsapp.com/send?phone=34692643911&text="+encodeURIComponent(txt),"_blank","noopener");
-  $("#msg").textContent="Listo. Si no se abrió WhatsApp, llámanos al 692 643 911.";
-};
+  const t=`Hola, soy ${n}. Me interesa: ${f.s.value}.${f.m.value.trim()?" "+f.m.value.trim():""}`;
+  window.open("https://api.whatsapp.com/send?phone=34692643911&text="+encodeURIComponent(t),"_blank","noopener");
+  $("#msg").textContent="Listo. Si no se abrió WhatsApp, llámanos al 692 643 911."};
+obs();
 </script>
 </body>
 </html>
